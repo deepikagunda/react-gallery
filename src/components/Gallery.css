@@ -1,0 +1,72 @@
+.Gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.GalleryContainer{
+    display: grid;
+    grid-template-columns:100px auto 100px; ;
+    align-items: center;
+   
+}
+#title{
+    font-size: 2rem;
+    margin:1rem;
+    text-transform: capitalize;
+}
+.GalleryContainer  img{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    
+}
+button{
+    all:unset;
+    font-weight: 400;
+    background-color: aliceblue;
+}
+#nextbtn{
+    
+    padding: 2px 3px;
+    height: fit-content;
+}
+#nextbtn:hover, #prevbtn:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 1px black;
+}
+.thumbnailContainer{
+    height: 64px;
+    position: relative;
+    top:-1px;
+    z-index: 2;
+    background-color: lightgray;
+    display: inline-block;
+}
+.thumbnailContainer img{
+    box-sizing: border-box ;
+    width: 69px;
+    height: 64px;
+    padding:0px 5px;
+   
+}
+.thumbnail.current{
+    border: solid 1px black;
+    box-shadow: 1px 1px 2px black;
+}
+.thumbnail:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 1px black;
+}
+#prevbtn{
+    padding: 2px 3px;
+    height: fit-content;
+}
+.slide{
+    box-sizing: border-box ;
+    display:none;
+    margin:20px;
+}
+.slide.current{
+    display: inline-block;
+}
